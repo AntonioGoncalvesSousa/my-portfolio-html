@@ -77,3 +77,25 @@ sr.reveal('.contact-subtitle', {});
 sr.reveal('.contact-text', {interval: 200});
 sr.reveal('.contact-input', {delay: 400});
 sr.reveal('.contact-button', {delay: 600});
+
+// lang.js
+document.addEventListener("DOMContentLoaded", () => {
+    const lang = localStorage.getItem("lang") || "pt";
+    applyTranslations(lang);
+  });
+  
+  function applyTranslations(lang) {
+    const elements = document.querySelectorAll("[data-i18n]");
+  
+    elements.forEach(el => {
+      const path = el.getAttribute("data-i18n").split(".");
+      let translation = translations[lang];
+      
+      path.forEach(key => {
+        if (translation) translation = translation[key];
+      });
+  
+      if (translation) el.textContent = translation;
+    });
+  }
+  

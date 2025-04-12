@@ -4,150 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Portfolio Language</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body>
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav-logo">Antonio Gonçalves Sousa</a>
-            </div>
-
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link active">Inicio</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfólio</a></li>
-                </ul>
-            </div>
-
-            <div class="nav-toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-    </header>
-
-    <main class="l-main">
-        <section class="home" id="home">
-            <div class="home-container bd-grid">
-                <h1 class="home-title"><span>Dev</span><br>Full-Stack</h1>
-
-                <div class="home-scroll">
-                    <a href="#about" class="home-scroll-link"><i class='bx bx-up-arrow-alt'></i>ROLE PARA BAIXO</a>
-                </div>
-
-                <img src="assets/images/perfilNoBack.png" class="home-img">
-            </div>
-        </section>
-
-        <section class="about section" id="about">
-            <h2 class="section-title">Sobre</h2>
-
-            <div class="about-container bd-grid">
-                <div class="about-img">
-                    <img src="assets/images/perfilNoBack.png" >
-                </div>
-
-                <div>
-                    <h2 class="about-subtitle">Eu sou Antonio Gonçalves Sousa</h2>
-                    <span class="about-profession">Desenvolvedor Full-Stack</span>
-                    <p class="about-text">Desenvolvedor Full-Stack, focado em criar soluções completas, escaláveis e de alta performance. Comprometido com a qualidade do código e a integração entre sistemas, atuo bem em equipe e estou sempre em busca de novos aprendizados e desafios para crescer profissionalmente.
-                    </p>
-
-                    <div class="about-social">
-                        <a href="https://www.linkedin.com/in/antonio-gonçalves-sousa-3477a0283/" class="about-social-icon"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/AntonioGoncalvesSousa" class="about-social-icon"><i class='bx bxl-github'></i></a>
-                        <a href="assets/curriculo/AntonioCV.pdf" class="about-social-icon"><i class='bx bxs-file-pdf'></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Habilidades</h2>
-
-            <div class="skills-container bd-grid">
-                <div class="skills-box">
-                    <h3 class="skils-subtitle">Desenvolvimento</h3>
-
-                    <span class="skills-name">HTML</span>
-                    <span class="skills-name">CSS</span>
-                    <span class="skills-name">JAVASCRIPT</span>
-                    <span class="skills-name">REACT</span>
-                    <span class="skills-name">Java</span>
-                    <span class="skills-name">Spring Book</span>
-
-                    <h3 class="skils-subtitle">Outros</h3>
-
-                    <span class="skills-name">Docker</span>
-                    <span class="skills-name">AWS</span>
-                    <span class="skills-name">Git</span>
-                    <span class="skills-name">Design Sprint</span>
-                    <span class="skills-name">SCRUM</span>
-                </div>
-
-                <div class="skills-img">
-                    <img src="assets/images/programing.jpg" alt="skills image">
-                </div>
-            </div>
-        </section>
-
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section-title">Portfolio</h2>
-
-            <div class="portfolio-container bd-grid">
-                <div class="portfolio-img">
-                    <img src="assets/images/vaxCare.png" alt="work image">
-
-                    <div class="portfolio-link">
-                        <a href="https://github.com/VaxCareOficial" class="portfolio-link-name">View Details</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-img">
-                    <img src="assets/images/officeEye.png" alt="work image">
-
-                    <div class="portfolio-link">
-                        <a href="https://github.com/OfficeEye" class="portfolio-link-name">View Details</a>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>  
-    </main>
-
-    <footer class="footer section">
-        <div class="footer-container bd-grid">
-            <div class="footer-data">
-                <h2 class="footer-title">Antonio Gonçalves Sousa</h2>
-                <p class="footer-text">Eu sou Antonio Gonçalves Sousa e esse é o meu site pessoal</p>
-            </div>
-
-            <div class="footer-data">
-                <h2 class="footer-title">Menu</h2>
-                <ul>
-                    <li><a href="#home" class="footer-link">Inicio</a></li>
-                    <li><a href="#about" class="footer-link">Sobre</a></li>
-                    <li><a href="#skills" class="footer-link">Habilidades</a></li>
-                    <li><a href="#portfolio" class="footer-link">Portfólio</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-data">
-                <h2 class="footer-title">Contato</h2>
-
-                <li><a class="footer-link">antonio.sj2005@gmail.com</a></li>
-            </div>
+<body class="lamguage-body">
+    <section class="language-section">
+        <div class="language-container">
+            <button class="language-button" data-lang="pt">
+                <img src="assets/flags/brasil.png" alt="Brasil" class="flag">
+                Português
+            </button>
+            <button class="language-button" data-lang="en">
+                <img src="assets/flags/estados-unidos.png" alt="US" class="flag">
+                English
+            </button>
         </div>
-    </footer>
-    
+    </section>
 </body>
+<script>
+    document.querySelectorAll(".language-button").forEach(button => {
+      button.addEventListener("click", () => {
+        const lang = button.getAttribute("data-lang");
+        localStorage.setItem("lang", lang); 
+        window.location.href = "./portfolio/portfolio.html";
+      });
+    });
+  </script>
 
 </html>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="main.js"></script>
